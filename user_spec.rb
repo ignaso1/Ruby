@@ -1,4 +1,5 @@
 require './spec_helper.rb'
+
 describe User do
   context 'when not registered' do
     before do
