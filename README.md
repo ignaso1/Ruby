@@ -23,11 +23,11 @@
 9. Gali užsisakyti dietologo - trenerio paslaugas;
 10. Gali atsisakyti trenerio paslaugų;
 11. Gali koreguoti savo duomenis: 
-   - ūgį;
-   - svorį;
-   - tikslą;
-   - el.paštą;
-   - banko sąskaitos numerį;
+    - ūgį;
+    - svorį;
+    - tikslą;
+    - el.paštą;
+    - banko sąskaitos numerį;
 12. Gali rašyti atsiliepimus apie trenerį, iš kurio buvo pirktos paslaugos;
 
 ##### Treneris:
