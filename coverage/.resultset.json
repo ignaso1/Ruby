@@ -4,15 +4,14 @@
       "/home/ignas/Desktop/Ruby/user.rb": [
         null,
         1,
-        null,
         1,
         1,
         1,
         null,
         null,
         1,
-        36,
-        36,
+        18,
+        18,
         null,
         null,
         null,
@@ -21,16 +20,16 @@
         null,
         null,
         1,
-        25,
-        25,
-        25,
-        25,
+        18,
+        18,
+        18,
+        18,
         null,
         null,
         1,
         null,
-        21,
-        19,
+        14,
+        12,
         null,
         null,
         1,
@@ -90,6 +89,6 @@
         null
       ]
     },
-    "timestamp": 1509813180
+    "timestamp": 1509923801
   }
 }
