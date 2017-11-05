@@ -7,12 +7,14 @@ SAVYBĖS:
 Vartotojas:
 
 (!)	1. Gali registruotis prie sistemos:
-		vartotojai turi vardą ir pavardę, lytį, gimimo metus;
-		vartotojai turi el. paštą, į kurį yra siunčiama informacija;
-		turi unikalų paskyros ID, slaptaodi;
-	    vartotojas turi banko sąskaitą, kuri yra naudojama atsiskaityti sistemoje už paslaugas;		
-	    vartotojai turi ūgį, svorį, tikslą (priaugti svorio/numesti svorio);
-		vartotojai turi aktyvumo lygį, pagal kurį yra parenkamas sporto krūvis ir kalorijų kiekis;
+
+	vartotojai turi vardą ir pavardę, lytį, gimimo metus;
+	vartotojai turi el. paštą, į kurį yra siunčiama informacija;
+	turi unikalų paskyros ID, slaptaodi;
+	vartotojas turi banko sąskaitą, kuri yra naudojama atsiskaityti sistemoje už paslaugas;		
+	vartotojai turi ūgį, svorį, tikslą (priaugti svorio/numesti svorio);
+	vartotojai turi aktyvumo lygį, pagal kurį yra parenkamas sporto krūvis ir kalorijų kiekis;
+
 (!)	2. Gali prisijungti prie sistemos;
 (!)	3. Gali užsisakyti mitybos planą;
 (!)	4. Gali užsisakyti sporto programą;
