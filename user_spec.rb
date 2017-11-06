@@ -1,4 +1,7 @@
-require './spec_helper.rb'
+require 'simplecov'
+SimpleCov.start
+
+require './user.rb'
 
 describe User do
   context 'when not registered' do
@@ -118,12 +121,20 @@ describe User do
         .from(0).to(2)
     end
 
+    it 'must enter details in order to order a meal plan' do
+      expect(@user.order_meal_plan).to be false
+    end
+
     it 'can order a meal plan' do
       birth_date = '1997-02-04'
       @user.add_details(birth_date)
       expect { @user.order_meal_plan }
         .to change { @user.account_details('meal_plan') }
         .from(false).to(true)
+    end
+
+    it 'must enter details in order to order a workout plan' do
+      expect(@user.order_workout_plan).to be false
     end
 
     it 'can order a workout plan' do

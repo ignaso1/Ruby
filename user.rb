@@ -1,18 +1,18 @@
-# User class used for the workout and meal plan program.
+# User class used for the workout and meal program
 class User
   @id = 0
   class << self
     attr_accessor :id
   end
-
   def initialize
     self.class.id += 1
     @account_details = { meal_plan: false, workout_plan: false,
+                         activity_level: 0,
+                         height: 0, weight: 0, goal: '',
                          gender: '', birth_date: '',
                          is_logged_in: false, account_id: 10_000,
                          email: '', password: '', full_name: '',
-                         bank_account_number: '', activity_level: 0,
-                         height: 0, weight: 0, goal: '' }
+                         bank_account_number: '' }
   end
 
   def register(full_name, email, password)
@@ -43,36 +43,12 @@ class User
     false
   end
 
-  def order_meal_plan
-    @account_details[:meal_plan] = true
-  end
-
-  def order_workout_plan
-    @account_details[:workout_plan] = true
-  end
-
   def account_details(symbol)
     @account_details.fetch(symbol.to_sym)
   end
 
-  def height=(information)
-    @account_details[:height] = information
-  end
-
-  def weight=(information)
-    @account_details[:weight] = information
-  end
-
-  def goal=(information)
-    @account_details[:goal] = information
-  end
-
-  def activity_level=(information)
-    @account_details[:activity_level] = information
-  end
-
-  def bank_account_number=(information)
-    @account_details[:bank_account_number] = information
+  def bank_account_number=(account_details)
+    @account_details[:bank_account_number] = account_details
   end
 
   def add_details(detail_value)
@@ -82,4 +58,31 @@ class User
       @account_details[:birth_date] = detail_value
     end
   end
+
+  def order_meal_plan
+    return false unless details?
+    @account_details[:meal_plan] = true
+  end
+
+  def order_workout_plan
+    return false unless details?
+    @account_details[:workout_plan] = true
+  end
+
+  def height=(account_details)
+    @account_details[:height] = account_details
+  end
+
+  def weight=(account_details)
+    @account_details[:weight] = account_details
+  end
+
+  def goal=(account_details)
+    @account_details[:goal] = account_details
+  end
+
+  def activity_level=(account_details)
+    @account_details[:activity_level] = account_details
+  end
+
 end
