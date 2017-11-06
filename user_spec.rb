@@ -16,24 +16,24 @@ describe User do
 
     it 'enters their name upon registration' do
       expect { @user.register('Ignas O', 'ignaso@gmail.com', 'riebaludegimas') }
-        .to change { @user.account_details('full_name') }.from('').to('Ignas O')
+        .to change { @user.information('full_name') }.from('').to('Ignas O')
     end
 
     it 'gets a unique account id upon registration' do
       expect { @user.register('Ignas O', 'ignaso@gmail.com', 'riebaludegimas') }
-        .to change { @user.account_details('account_id') }
-        .from(10_000).to(10_003)
+        .to change { @user.information('account_id') }
+        .from(0).to(10_003)
     end
 
     it 'enters their email upon registration' do
       expect { @user.register('Ignas O', 'ignaso@gmail.com', 'riebaludegimas') }
-        .to change { @user.account_details('email') }
+        .to change { @user.information('email') }
         .from('').to('ignaso@gmail.com')
     end
 
     it 'enters their password upon registration' do
       expect { @user.register('Ignas O', 'ignaso@gmail.com', 'riebaludegimas') }
-        .to change { @user.account_details('password') }
+        .to change { @user.information('password') }
         .from('').to('riebaludegimas')
     end
   end
@@ -47,7 +47,7 @@ describe User do
 
     it 'can login' do
       expect { @user.login('ignasobulaitis@gmail.com', 'riebaludegimas') }
-        .to change { @user.account_details('is_logged_in') }
+        .to change { @user.information('is_logged_in') }
         .from(false).to(true)
     end
 
@@ -67,29 +67,29 @@ describe User do
     end
 
     it 'can see their account information' do
-      expect(@user.account_details('full_name')).to eql('Ignas Obulaitis')
-      expect(@user.account_details('email')).to eql('ignasobulaitis@gmail.com')
-      expect(@user.account_details('password')).to eql('riebaludegimas')
+      expect(@user.information('full_name')).to eql('Ignas Obulaitis')
+      expect(@user.information('email')).to eql('ignasobulaitis@gmail.com')
+      expect(@user.information('password')).to eql('riebaludegimas')
     end
 
     it 'can enter their gender' do
       gender = 'M'
       expect { @user.add_details(gender) }
         .to change { @user.details? }.from(false).to(true)
-      expect(@user.account_details('gender')).to eql('M')
+      expect(@user.information('gender')).to eql('M')
     end
 
     it 'can enter their birth date' do
       birth_date = '1997-02-04'
       expect { @user.add_details(birth_date) }
         .to change { @user.details? }.from(false).to(true)
-      expect(@user.account_details('birth_date')).to eql('1997-02-04')
+      expect(@user.information('birth_date')).to eql('1997-02-04')
     end
 
     it 'can add a bank account' do
       number = 'LT_567_300_000_000_000_000'
       expect { @user.bank_account_number = number }
-        .to change { @user.account_details('bank_account_number') }
+        .to change { @user.information('bank_account_number') }
         .from('').to('LT_567_300_000_000_000_000')
     end
 
@@ -121,7 +121,7 @@ describe User do
         .from(0).to(2)
     end
 
-    it 'must enter details in order to order a meal plan' do
+    it 'must enter details to order a meal plan' do
       expect(@user.order_meal_plan).to be false
     end
 
@@ -133,7 +133,7 @@ describe User do
         .from(false).to(true)
     end
 
-    it 'must enter details in order to order a workout plan' do
+    it 'must enter details to order a workout plan' do
       expect(@user.order_workout_plan).to be false
     end
 
@@ -147,7 +147,7 @@ describe User do
 
     it 'can logout' do
       expect { @user.logout }
-        .to change { @user.account_details('is_logged_in') }
+        .to change { @user.information('is_logged_in') }
         .from(true).to(false)
     end
   end
