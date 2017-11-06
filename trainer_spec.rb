@@ -15,7 +15,7 @@ describe Trainer do
 
     it 'enters their name upon registration' do
       expect { @trainer.register('Jonas Gains', 'treneris@jonas.lt', '1234') }
-        .to change { @trainer.information('full_name') }.from('').to('Ignas O')
+        .to change { @trainer.information('full_name') }.from('').to('Jonas Gains')
     end
   end
 end
