@@ -8,11 +8,14 @@ describe Trainer do
       @trainer = Trainer.new
     end
 
-    #TODO: SEPARATE USER TO CLIENT AND USER CLASSES, ADD INHERITANCE
-
     it 'can register' do
       expect { @trainer.register('Jonas Gains', 'treneris@jonas.lt', '1234') }
         .to change { @trainer.registered? }.from(false).to(true)
+    end
+
+    it 'enters their name upon registration' do
+      expect { @trainer.register('Jonas Gains', 'treneris@jonas.lt', '1234') }
+        .to change { @trainer.information('full_name') }.from('').to('Ignas O')
     end
   end
 end
