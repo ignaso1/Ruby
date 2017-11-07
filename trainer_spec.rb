@@ -15,5 +15,18 @@ describe Trainer do
         .from(0).to(20_001)
     end
 
+  context 'when logged in' do
+    before do
+      @trainer = trainer.new
+      @trainer.register('Jonas Gains', 'treneris@jonas.lt', '1234')
+      @trainer.login('treneris@jonas.lt', '1234')
+    end
+    
+    it 'can choose to create meal plans ' do
+      expect { @trainer.create_meal_plans }
+        .to change { @trainer.preferences('meal_plans')}
+        .from(false).to(true)
+    end
+
   end
 end
