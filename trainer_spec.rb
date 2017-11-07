@@ -27,5 +27,11 @@ describe Trainer do
         .to change { @trainer.preferences('meal_plans')}
         .from(false).to(true)
     end
+
+    it 'can enter trainer\'s license number' do
+      expect { @trainer.license_number = 555_666_902 }
+        .to change { @trainer.preferences('license_number')}
+        .from(0).to(555_666_902)
+    end
   end
 end
