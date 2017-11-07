@@ -8,6 +8,10 @@ describe MvpService do
     @service = MvpService.new
   end
 
+  it 'can create an unregistered user account' do
+    expect(@service.create_account('User')).to be true
+  end
+
   it 'can register a new user' do
   	usr_name = 'Ignas'
   	usr_password = '2017Ruby*10h'
