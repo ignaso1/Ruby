@@ -17,7 +17,7 @@ describe Trainer do
   end
   context 'when logged in' do
     before do
-      @trainer = trainer.new
+      @trainer = Trainer.new
       @trainer.register('Jonas Gains', 'treneris@jonas.lt', '1234')
       @trainer.login('treneris@jonas.lt', '1234')
     end
