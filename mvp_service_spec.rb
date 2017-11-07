@@ -9,7 +9,9 @@ describe MvpService do
   end
 
   it 'can create an unregistered user account' do
-    expect(@service.create_account('User')).to be true
+    expect { @service.create_account('User') }
+      .to change { @service.user }
+      .from(nil).to(User)
   end
 
   it 'can register a new user' do
