@@ -7,7 +7,9 @@ class Trainer < Account
     @information = {}
     @preferences = { meal_plans: false, license_number: 0,
                      workout_plans: false, trainer_services: false,
-                     dietician_services: false }
+                     dietician_services: false, meal_plans_price: 0,
+                     workout_plans_price: 0, trainer_services_price: 0,
+                     dietician_services_price: 0 }
     super()
     @information[:account_type] = 20_000
   end
@@ -34,5 +36,10 @@ class Trainer < Account
 
   def provide_personal_dietician_services
     @preferences[:dietician_services] = true
+  end
+
+  def set_prices(services, price)
+    service_price = services + '_price'
+    @preferences[service_price.to_sym] = price
   end
 end
