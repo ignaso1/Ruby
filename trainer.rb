@@ -5,7 +5,8 @@ class Trainer < Account
 
   def initialize
     @information = {}
-    @preferences = { meal_plans: false, license_number: 0 }
+    @preferences = { meal_plans: false, license_number: 0,
+                     workout_plans: false }
     super()
     @information[:account_type] = 20_000
   end
@@ -14,11 +15,15 @@ class Trainer < Account
     @preferences.fetch(symbol.to_sym)
   end
 
+  def license_number=(value)
+    @preferences[:license_number] = value
+  end
+
   def create_meal_plans
     @preferences[:meal_plans] = true
   end
 
-  def license_number=(value)
-    @preferences[:license_number] = value
+  def create_workout_plans
+    @preferences[:workout_plans] = true
   end
 end
