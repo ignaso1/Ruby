@@ -14,7 +14,7 @@ describe Trainer do
         .to change { @trainer.information('account_id') }
         .from(0).to(20_001)
     end
-
+  end
   context 'when logged in' do
     before do
       @trainer = trainer.new
@@ -27,6 +27,5 @@ describe Trainer do
         .to change { @trainer.preferences('meal_plans')}
         .from(false).to(true)
     end
-
   end
 end
