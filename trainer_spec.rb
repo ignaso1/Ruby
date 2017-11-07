@@ -45,5 +45,11 @@ describe Trainer do
         .to change { @trainer.preferences('trainer_services')}
         .from(false).to(true)
     end
+
+    it 'can choose to provide personal dietician services ' do
+      expect { @trainer.provide_personal_dietician_services }
+        .to change { @trainer.preferences('dietician_services')}
+        .from(false).to(true)
+    end
   end
 end
