@@ -52,10 +52,19 @@ describe Trainer do
         .from(false).to(true)
     end
 
-    it 'can set prices of services ' do
+    it 'can set prices of services' do
       expect { @trainer.set_prices('meal_plans', 200) }
         .to change { @trainer.preferences('meal_plans_price')}
         .from(0).to(200)
+      expect { @trainer.set_prices('workout_plans', 200) }
+        .to change { @trainer.preferences('workout_plans_price')}
+        .from(0).to(200)
+      expect { @trainer.set_prices('trainer_services', 500) }
+        .to change { @trainer.preferences('trainer_services_price')}
+        .from(0).to(500)
+      expect { @trainer.set_prices('dietician_services', 500) }
+        .to change { @trainer.preferences('dietician_services_price')}
+        .from(0).to(500)
     end
   end
 end
