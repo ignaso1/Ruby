@@ -51,5 +51,11 @@ describe Trainer do
         .to change { @trainer.preferences('dietician_services')}
         .from(false).to(true)
     end
+
+    it 'can set prices of services ' do
+      expect { @trainer.set_prices('meal_plans', 200) }
+        .to change { @trainer.preferences('meal_plans_price')}
+        .from(0).to(200)
+    end
   end
 end
