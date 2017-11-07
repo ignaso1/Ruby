@@ -5,7 +5,7 @@ class Trainer < Account
 
   def initialize
     @information = {}
-    @preferences = { meal_plans: false }
+    @preferences = { meal_plans: false, license_number: 0 }
     super()
     @information[:account_type] = 20_000
   end
@@ -16,5 +16,9 @@ class Trainer < Account
 
   def create_meal_plans
     @preferences[:meal_plans] = true
+  end
+
+  def license_number=(value)
+    @preferences[:license_number] = value
   end
 end
