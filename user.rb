@@ -4,11 +4,10 @@ class User < Account
   @count = 0
 
   def initialize
-    super()
+    super(10_000)
     @account_details = { meal_plan: false, workout_plan: false,
                          activity_level: 0,
                          height: 0, weight: 0, goal: '' }
-    @information[:account_type] = 10_000
   end
 
   def account_details(symbol)

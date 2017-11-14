@@ -4,13 +4,12 @@ class Trainer < Account
   @count = 0
 
   def initialize
-    super()
+    super(20_000)
     @preferences = { meal_plans: false, license_number: 0,
                      workout_plans: false, trainer_services: false,
                      dietician_services: false, meal_plans_price: 0,
                      workout_plans_price: 0, trainer_services_price: 0,
                      dietician_services_price: 0 }
-    @information[:account_type] = 20_000
   end
 
   def preferences(symbol)
