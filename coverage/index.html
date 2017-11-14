@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-07T03:10:17+02:00">2017-11-07T03:10:17+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-14T17:06:57+02:00">2017-11-14T17:06:57+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.46
+         3.96
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>117</b> relevant lines. 
-    <span class="green"><b>117</b> lines covered</span> and
+    <b>126</b> relevant lines. 
+    <span class="green"><b>126</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -54,30 +54,30 @@
         <td class="strong"><a href="#0a1de7fee90b319c84cc19f5b7fbfb07c3deed8e" class="src_link" title="account.rb">account.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>62</td>
-        <td>32</td>
-        <td>32</td>
+        <td>33</td>
+        <td>33</td>
         <td>0</td>
-        <td>7.2</td>
+        <td>9.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#c3e3673c7c58907ea9dbf24c92767ea48e9e247c" class="src_link" title="account_spec.rb">account_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>108</td>
-        <td>62</td>
-        <td>62</td>
+        <td>126</td>
+        <td>70</td>
+        <td>70</td>
         <td>0</td>
-        <td>1.7</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#85d1761a53900238cae8f4441c2169af3a28ce88" class="src_link" title="trainer.rb">trainer.rb</a></td>
+        <td class="strong"><a href="#4831607fcc14fcd917051b482aa9c8e48c1dc7f4" class="src_link" title="user.rb">user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>45</td>
+        <td>43</td>
         <td>23</td>
         <td>23</td>
         <td>0</td>
-        <td>3.0</td>
+        <td>2.6</td>
       </tr>
       
     </tbody>
@@ -101,8 +101,8 @@
     <h3>account.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>32</b> relevant lines. 
-      <span class="green"><b>32</b> lines covered</span> and
+      <b>33</b> relevant lines. 
+      <span class="green"><b>33</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -164,16 +164,16 @@
           <code class="ruby">  def initialize(account_type = 0)</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="10">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="34" data-linenumber="10">
+          <span class="hits">34</span>
           
           <code class="ruby">    self.class.count += 1</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="11">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="34" data-linenumber="11">
+          <span class="hits">34</span>
           
-          <code class="ruby">    @information = { gender: &#39;&#39;, birth_date: &#39;&#39;,</code>
+          <code class="ruby">    @information = { gender: &#39;&#39;, birthday: &#39;&#39;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
@@ -185,289 +185,289 @@
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">                     email: &#39;&#39;, password: &#39;&#39;, full_name: &#39;&#39;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
           <code class="ruby">                     bank_account_number: &#39;&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="26" data-linenumber="15">
-          <span class="hits">26</span>
+        <li class="covered" data-hits="34" data-linenumber="14">
+          <span class="hits">34</span>
           
           <code class="ruby">    @information[:account_type] = account_type</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">  def register(full_name, email, password)</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="19">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="27" data-linenumber="18">
+          <span class="hits">27</span>
           
           <code class="ruby">    @information[:account_id] = self.class.count +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">                                @information.fetch(:account_type)</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="21">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="27" data-linenumber="20">
+          <span class="hits">27</span>
           
           <code class="ruby">    @information[:full_name] = full_name</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="22">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="27" data-linenumber="21">
+          <span class="hits">27</span>
           
           <code class="ruby">    @information[:email] = email</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="23">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="27" data-linenumber="22">
+          <span class="hits">27</span>
           
           <code class="ruby">    @information[:password] = password</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
           <code class="ruby">  def login(email_value, password_value)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">    return false unless email_value.eql?(@information.fetch(:email)) &amp;&amp;</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="28">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="22" data-linenumber="27">
+          <span class="hits">22</span>
           
           <code class="ruby">                        password_value.eql?(@information.fetch(:password))</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="29">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="20" data-linenumber="28">
+          <span class="hits">20</span>
           
           <code class="ruby">    @information[:is_logged_in] = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  def logout</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">    @information[:is_logged_in] = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
           <code class="ruby">  def details?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">    return true unless @information.fetch(:gender).empty? &amp;&amp;</code>
         </li>
       
+        <li class="covered" data-hits="8" data-linenumber="37">
+          <span class="hits">8</span>
+          
+          <code class="ruby">                       @information.fetch(:birthday).empty?</code>
+        </li>
+      
         <li class="covered" data-hits="4" data-linenumber="38">
           <span class="hits">4</span>
           
-          <code class="ruby">                       @information.fetch(:birth_date).empty?</code>
+          <code class="ruby">    false</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="39">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="39">
           
-          <code class="ruby">    false</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
           <code class="ruby">  def registered?</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="43">
+        <li class="covered" data-hits="2" data-linenumber="42">
           <span class="hits">2</span>
           
           <code class="ruby">    return true unless @information.fetch(:account_id).equal?(0)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">    false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
           <code class="ruby">  def information(symbol)</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="48">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="20" data-linenumber="47">
+          <span class="hits">20</span>
           
           <code class="ruby">    @information.fetch(symbol.to_sym)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
           <code class="ruby">  def bank_account_number=(information)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
           <code class="ruby">    @information[:bank_account_number] = information</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
+        <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">  def add_details(detail_value)</code>
+          <code class="ruby">  def gender(value)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="55">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    return false unless value.length.equal?(1)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="56">
           <span class="hits">2</span>
           
-          <code class="ruby">    if detail_value.length.equal?(1)</code>
+          <code class="ruby">    @information[:gender] = value</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="57">
           
-          <code class="ruby">      @information[:gender] = detail_value</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
-          <code class="ruby">      @information[:birth_date] = detail_value</code>
+          <code class="ruby">  def birthday(value)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="covered" data-hits="5" data-linenumber="60">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">    @information[:birthday] = value unless value.length.equal?(1)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
@@ -492,8 +492,8 @@
     <h3>account_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>62</b> relevant lines. 
-      <span class="green"><b>62</b> lines covered</span> and
+      <b>70</b> relevant lines. 
+      <span class="green"><b>70</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -609,16 +609,16 @@
           <code class="ruby">    it &#39;enters their name upon registration&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect { @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;) }</code>
+          <code class="ruby">      @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          <code class="ruby">        .to change { @account.information(&#39;full_name&#39;) }.from(&#39;&#39;).to(&#39;Ignas O&#39;)</code>
+          <code class="ruby">      expect(@account.information(&#39;full_name&#39;)).to match &#39;Ignas O&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
@@ -705,268 +705,268 @@
           <code class="ruby">    it &#39;enters their email upon registration&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect { @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;) }</code>
+          <code class="ruby">      @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="36">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          <code class="ruby">        .to change { @account.information(&#39;email&#39;) }</code>
+          <code class="ruby">      expect(@account.information(&#39;email&#39;)). to match &#39;ignaso@gmail.com&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">        .from(&#39;&#39;).to(&#39;ignaso@gmail.com&#39;)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;enters their password upon registration&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="41">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect { @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;) }</code>
+          <code class="ruby">      @account.register(&#39;Ignas O&#39;, &#39;ignaso@gmail.com&#39;, &#39;degimas&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="42">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
-          <code class="ruby">        .to change { @account.information(&#39;password&#39;) }</code>
+          <code class="ruby">      expect(@account.information(&#39;password&#39;)).to match &#39;degimas&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">        .from(&#39;&#39;).to(&#39;degimas&#39;)</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="45">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;when registered, but not logged in&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="49">
+        <li class="covered" data-hits="2" data-linenumber="47">
           <span class="hits">2</span>
           
           <code class="ruby">      @account = Account.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="50">
+        <li class="covered" data-hits="2" data-linenumber="48">
           <span class="hits">2</span>
           
           <code class="ruby">      @account.register(&#39;Ignas Obulaitis&#39;, &#39;ignasobulaitis@gmail.com&#39;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
+          
+          
+          <code class="ruby">                        &#39;degimas&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">                        &#39;degimas&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;can login&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="55">
+        <li class="covered" data-hits="2" data-linenumber="53">
           <span class="hits">2</span>
           
           <code class="ruby">      expect { @account.login(&#39;ignasobulaitis@gmail.com&#39;, &#39;degimas&#39;) }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="56">
+        <li class="covered" data-hits="2" data-linenumber="54">
           <span class="hits">2</span>
           
           <code class="ruby">        .to change { @account.information(&#39;is_logged_in&#39;) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">        .from(false).to(true)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;must enter the right password and email to login&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
+        <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(@account.login(&#39;ignas@gmail.com&#39;, &#39;degimas&#39;)).to be false</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(@account.login(&#39;ignasobulaitis@gmail.com&#39;, &#39;riebaludengimas&#39;))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">        .to be false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="67">
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
           <code class="ruby">  context &#39;when logged in&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="69">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="11" data-linenumber="67">
+          <span class="hits">11</span>
           
           <code class="ruby">      @account = Account.new</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="70">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="11" data-linenumber="68">
+          <span class="hits">11</span>
           
           <code class="ruby">      @account.register(&#39;Ignas Obulaitis&#39;, &#39;ignasobulaitis@gmail.com&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">                        &#39;degimas&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="72">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="11" data-linenumber="70">
+          <span class="hits">11</span>
           
           <code class="ruby">      @account.login(&#39;ignasobulaitis@gmail.com&#39;, &#39;degimas&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="72">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;can see their account information&#39; do</code>
+          <code class="ruby">    it &#39;can see their full name&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="76">
+        <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(@account.information(&#39;full_name&#39;)).to eql(&#39;Ignas Obulaitis&#39;)</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@account.information(&#39;email&#39;)).to eql(&#39;ignasobulaitis@gmail.com&#39;)</code>
+          <code class="ruby">    it &#39;can see their email&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@account.information(&#39;password&#39;)).to eql(&#39;degimas&#39;)</code>
+          <code class="ruby">      expect(@account.information(&#39;email&#39;)).to eql(&#39;ignasobulaitis@gmail.com&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="79">
@@ -984,73 +984,73 @@
         <li class="covered" data-hits="1" data-linenumber="81">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;can enter their gender&#39; do</code>
+          <code class="ruby">    it &#39;can see their password&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="82">
           <span class="hits">1</span>
           
-          <code class="ruby">      gender = &#39;M&#39;</code>
+          <code class="ruby">      expect(@account.information(&#39;password&#39;)).to eql(&#39;degimas&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="83">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      expect { @account.add_details(gender) }</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="84">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        .to change { @account.details? }.from(false).to(true)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="85">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(@account.information(&#39;gender&#39;)).to eql(&#39;M&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="88">
+        <li class="covered" data-hits="1" data-linenumber="85">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;can enter their birth date&#39; do</code>
+          <code class="ruby">    it &#39;can add details by specifying their gender&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      birth_date = &#39;1997-02-04&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="90">
+        <li class="covered" data-hits="2" data-linenumber="86">
           <span class="hits">2</span>
           
-          <code class="ruby">      expect { @account.add_details(birth_date) }</code>
+          <code class="ruby">      expect { @account.gender(&#39;M&#39;) }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="91">
+        <li class="covered" data-hits="2" data-linenumber="87">
           <span class="hits">2</span>
           
           <code class="ruby">        .to change { @account.details? }.from(false).to(true)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="90">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(@account.information(&#39;birth_date&#39;)).to eql(&#39;1997-02-04&#39;)</code>
+          <code class="ruby">    it &#39;can add details by specifying their birthday&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="91">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      expect { @account.birthday(&#39;1997-02-04&#39;) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="92">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        .to change { @account.details? }.from(false).to(true)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
@@ -1068,82 +1068,190 @@
         <li class="covered" data-hits="1" data-linenumber="95">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;can add a bank account&#39; do</code>
+          <code class="ruby">    it &#39;can enter their gender&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="96">
           <span class="hits">1</span>
           
-          <code class="ruby">      number = &#39;LT_567_300_000_000_000_000&#39;</code>
+          <code class="ruby">      @account.gender(&#39;M&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="97">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect { @account.bank_account_number = number }</code>
+          <code class="ruby">      expect(@account.information(&#39;gender&#39;)).to eql(&#39;M&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="98">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="98">
           
-          <code class="ruby">        .to change { @account.information(&#39;bank_account_number&#39;) }</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">        .from(&#39;&#39;).to(&#39;LT_567_300_000_000_000_000&#39;)</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="100">
+        <li class="covered" data-hits="1" data-linenumber="100">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;gender must consist of only one symbol&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="101">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@account.gender(&#39;Male&#39;)).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="101">
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="102">
+        <li class="covered" data-hits="1" data-linenumber="104">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &#39;can logout&#39; do</code>
+          <code class="ruby">    it &#39;can enter their birth date&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="103">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="105">
+          <span class="hits">1</span>
           
-          <code class="ruby">      expect { @account.logout }</code>
+          <code class="ruby">      @account.birthday(&#39;1997-02-04&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="104">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
           
-          <code class="ruby">        .to change { @account.information(&#39;is_logged_in&#39;) }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="105">
-          
-          
-          <code class="ruby">        .from(true).to(false)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="106">
-          
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      expect(@account.information(&#39;birthday&#39;)).to eql(&#39;1997-02-04&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="107">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="109">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;birthday must consist of more than one symbol&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@account.birthday(&#39;1&#39;)).to be nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="113">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;can add a bank account&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="114">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      number = &#39;LT_567_300_000_000_000_000&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="115">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      expect { @account.bank_account_number = number }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="116">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        .to change { @account.information(&#39;bank_account_number&#39;) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby">        .from(&#39;&#39;).to(&#39;LT_567_300_000_000_000_000&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="120">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;can logout&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="121">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      expect { @account.logout }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="122">
+          <span class="hits">2</span>
+          
+          <code class="ruby">        .to change { @account.information(&#39;is_logged_in&#39;) }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby">        .from(true).to(false)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="126">
           
           
           <code class="ruby">end</code>
@@ -1154,9 +1262,9 @@
 </div>
 
       
-        <div class="source_table" id="85d1761a53900238cae8f4441c2169af3a28ce88">
+        <div class="source_table" id="4831607fcc14fcd917051b482aa9c8e48c1dc7f4">
   <div class="header">
-    <h3>trainer.rb</h3>
+    <h3>user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>23</b> relevant lines. 
@@ -1177,13 +1285,13 @@
         <li class="never" data-hits="" data-linenumber="2">
           
           
-          <code class="ruby"># Trainer class used for the workout and meal program</code>
+          <code class="ruby"># User class used for the workout and meal program</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">class Trainer &lt; Account</code>
+          <code class="ruby">class User &lt; Account</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -1204,235 +1312,223 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="7">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="7">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @information = {}</code>
+          <code class="ruby">    super()</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="8">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="8">
+          <span class="hits">9</span>
           
-          <code class="ruby">    @preferences = { meal_plans: false, license_number: 0,</code>
+          <code class="ruby">    @account_details = { meal_plan: false, workout_plan: false,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">                     workout_plans: false, trainer_services: false,</code>
+          <code class="ruby">                         activity_level: 0,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">                     dietician_services: false, meal_plans_price: 0,</code>
+          <code class="ruby">                         height: 0, weight: 0, goal: &#39;&#39; }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="9" data-linenumber="11">
+          <span class="hits">9</span>
           
-          
-          <code class="ruby">                     workout_plans_price: 0, trainer_services_price: 0,</code>
+          <code class="ruby">    @information[:account_type] = 10_000</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">                     dietician_services_price: 0 }</code>
-        </li>
-      
-        <li class="covered" data-hits="7" data-linenumber="13">
-          <span class="hits">7</span>
-          
-          <code class="ruby">    super()</code>
-        </li>
-      
-        <li class="covered" data-hits="7" data-linenumber="14">
-          <span class="hits">7</span>
-          
-          <code class="ruby">    @information[:account_type] = 20_000</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
           <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def account_details(symbol)</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="15">
+          <span class="hits">12</span>
+          
+          <code class="ruby">    @account_details.fetch(symbol.to_sym)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">  def preferences(symbol)</code>
+          <code class="ruby">  def order_meal_plan</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="18">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
           
-          <code class="ruby">    @preferences.fetch(symbol.to_sym)</code>
+          <code class="ruby">    return false unless details?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @account_details[:meal_plan] = true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">  def license_number=(value)</code>
+          <code class="ruby">  def order_workout_plan</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
           
-          <code class="ruby">    @preferences[:license_number] = value</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    return false unless details?</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create_meal_plans</code>
+          <code class="ruby">    @account_details[:workout_plan] = true</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="26">
           
-          <code class="ruby">    @preferences[:meal_plans] = true</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def height=(account_details)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create_workout_plans</code>
+          <code class="ruby">    @account_details[:height] = account_details</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="30">
           
-          <code class="ruby">    @preferences[:workout_plans] = true</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def weight=(account_details)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">  def provide_personal_trainer_services</code>
+          <code class="ruby">    @account_details[:weight] = account_details</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="34">
           
-          <code class="ruby">    @preferences[:trainer_services] = true</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def goal=(account_details)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">  def provide_personal_dietician_services</code>
+          <code class="ruby">    @account_details[:goal] = account_details</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="38">
           
-          <code class="ruby">    @preferences[:dietician_services] = true</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="40">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def activity_level=(account_details)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
-          <code class="ruby">  def set_prices(services, price)</code>
+          <code class="ruby">    @account_details[:activity_level] = account_details</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="42">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    service_price = services + &#39;_price&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="43">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    @preferences[service_price.to_sym] = price</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">end</code>

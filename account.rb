@@ -8,9 +8,8 @@ class Account
 
   def initialize(account_type = 0)
     self.class.count += 1
-    @information = { gender: '', birth_date: '',
+    @information = { gender: '', birthday: '',
                      is_logged_in: false, account_id: 0,
-                     email: '', password: '', full_name: '',
                      bank_account_number: '' }
     @information[:account_type] = account_type
   end
@@ -35,7 +34,7 @@ class Account
 
   def details?
     return true unless @information.fetch(:gender).empty? &&
-                       @information.fetch(:birth_date).empty?
+                       @information.fetch(:birthday).empty?
     false
   end
 
@@ -52,11 +51,12 @@ class Account
     @information[:bank_account_number] = information
   end
 
-  def add_details(detail_value)
-    if detail_value.length.equal?(1)
-      @information[:gender] = detail_value
-    else
-      @information[:birth_date] = detail_value
-    end
+  def gender(value)
+    return false unless value.length.equal?(1)
+    @information[:gender] = value
+  end
+
+  def birthday(value)
+    @information[:birthday] = value unless value.length.equal?(1)
   end
 end

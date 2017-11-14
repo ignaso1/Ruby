@@ -16,8 +16,8 @@ describe Account do
     end
 
     it 'enters their name upon registration' do
-      expect { @account.register('Ignas O', 'ignaso@gmail.com', 'degimas') }
-        .to change { @account.information('full_name') }.from('').to('Ignas O')
+      @account.register('Ignas O', 'ignaso@gmail.com', 'degimas')
+      expect(@account.information('full_name')).to match 'Ignas O'
     end
 
     it 'gets a unique account id upon registration, based on account type' do
@@ -32,15 +32,13 @@ describe Account do
     end
 
     it 'enters their email upon registration' do
-      expect { @account.register('Ignas O', 'ignaso@gmail.com', 'degimas') }
-        .to change { @account.information('email') }
-        .from('').to('ignaso@gmail.com')
+      @account.register('Ignas O', 'ignaso@gmail.com', 'degimas')
+      expect(@account.information('email')). to match 'ignaso@gmail.com'
     end
 
     it 'enters their password upon registration' do
-      expect { @account.register('Ignas O', 'ignaso@gmail.com', 'degimas') }
-        .to change { @account.information('password') }
-        .from('').to('degimas')
+      @account.register('Ignas O', 'ignaso@gmail.com', 'degimas')
+      expect(@account.information('password')).to match 'degimas'
     end
   end
 
@@ -72,24 +70,44 @@ describe Account do
       @account.login('ignasobulaitis@gmail.com', 'degimas')
     end
 
-    it 'can see their account information' do
+    it 'can see their full name' do
       expect(@account.information('full_name')).to eql('Ignas Obulaitis')
+    end
+
+    it 'can see their email' do
       expect(@account.information('email')).to eql('ignasobulaitis@gmail.com')
+    end
+
+    it 'can see their password' do
       expect(@account.information('password')).to eql('degimas')
     end
 
-    it 'can enter their gender' do
-      gender = 'M'
-      expect { @account.add_details(gender) }
+    it 'can add details by specifying their gender' do
+      expect { @account.gender('M') }
         .to change { @account.details? }.from(false).to(true)
+    end
+
+    it 'can add details by specifying their birthday' do
+      expect { @account.birthday('1997-02-04') }
+        .to change { @account.details? }.from(false).to(true)
+    end
+
+    it 'can enter their gender' do
+      @account.gender('M')
       expect(@account.information('gender')).to eql('M')
     end
 
+    it 'gender must consist of only one symbol' do
+      expect(@account.gender('Male')).to be false
+    end
+
     it 'can enter their birth date' do
-      birth_date = '1997-02-04'
-      expect { @account.add_details(birth_date) }
-        .to change { @account.details? }.from(false).to(true)
-      expect(@account.information('birth_date')).to eql('1997-02-04')
+      @account.birthday('1997-02-04')
+      expect(@account.information('birthday')).to eql('1997-02-04')
+    end
+
+    it 'birthday must consist of more than one symbol' do
+      expect(@account.birthday('1')).to be nil
     end
 
     it 'can add a bank account' do
