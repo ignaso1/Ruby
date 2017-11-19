@@ -69,6 +69,7 @@ class MvpInterface
 
   def user_registration
     clear_console
+    @service.getuser
     puts 'Creating user account'
     print 'Name: '
     user_name = gets.chomp

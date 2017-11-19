@@ -14,13 +14,17 @@ class MvpService
 
   def create_account(type)
     return false unless type.eql?('User') || type.eql?('Trainer')
-    @user = Object.const_get(type)
+    @user = (Object.const_get(type)).new
     true
   end
 
   def validate
     return false unless @user.information('is_logged_in')
     true
+  end
+
+  def getuser
+    puts @user
   end
 
   def register(full_name, email, password)
